@@ -8,6 +8,6 @@
 
 <ul>
   <% @categories.each do |category| %>
-    <li><%= category.id %>: <%= category.name_i18n %>
+    <li><%= category.id %> - <%= category.name_i18n %> - <%= t(category.name_i18n) %>
   <% end %>
 </ul>    
