@@ -64,3 +64,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# https://github.com/active-hash/active_hash
+gem "active_hash"
