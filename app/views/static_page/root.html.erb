@@ -3,3 +3,11 @@
 <p>
   ルートページの内容。
 </p>
+
+<h2>カテゴリー一覧</h2>
+
+<ul>
+  <% @categories.each do |category| %>
+    <li><%= category.id %>: <%= category.name_i18n %>
+  <% end %>
+</ul>    
