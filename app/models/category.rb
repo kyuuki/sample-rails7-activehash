@@ -6,4 +6,8 @@ class Category < ActiveHash::Base
     { id: 4, name_i18n: "category.it" },
     { id: 99999, name_i18n: "category.other" },
   ]
+
+  def name
+    I18n.t(self.name_i18n)
+  end
 end
